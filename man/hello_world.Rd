@@ -6,6 +6,9 @@
 \usage{
 hello_world(path)
 }
+\arguments{
+\item{path}{pass a path to the function}
+}
 \description{
 This should allow you to create reproducible analysis in R
 }
