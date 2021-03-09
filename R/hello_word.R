@@ -31,7 +31,7 @@ hello_world <- function(path) {
 
     # CREATE THE HEADER FOR FINAL ANALYSIS FILE
     header <- c("---", "title: \"Untitled\"", "author: \"AUTHOR\"",
-                "date: \"3/9/2021\"", "output: html_document", "---")
+                "date: \"DATE\"", "output: html_document", "---")
 
     # CREATE THE DATA CHUNK FOR FINAL ANALYSIS FILE
     chunk <- c("```{r setup, include = FALSE}", "# SETUP CHUNK FOR EXAMPLE",
