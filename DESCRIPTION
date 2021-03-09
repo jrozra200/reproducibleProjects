@@ -1,0 +1,13 @@
+Package: reproducibleProjects
+Type: Package
+Title: Reproducible Analysis Projects
+Version: 0.1.0
+Author: Jake Rozran
+Maintainer: Jake Rozran <jacob.rozran@gmail.com>
+Description: In order to create reproducible analysis, a package was created to 
+    initiate projects in RStudio (based on Rich Fitzjohn's blog post: 
+    https://nicercode.github.io/blog/2013-04-05-projects/).
+License: GNU General Public License v3.0 or later.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1.9001
