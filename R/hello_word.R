@@ -10,10 +10,10 @@
 hello_world <- function(path) {
 
     # CREATE THE FILE STRUCTURE FOR THE ANALYSIS
-    source("R/create_directories.R")
+    # source("R/create_directories.R")
     create_directories(path)
 
     # CREATE THE FINAL ANALYSIS FILE
-    source("R/build_final_analysis_rmd.R")
+    # source("R/build_final_analysis_rmd.R")
     build_final_analysis_rmd(path)
 }
