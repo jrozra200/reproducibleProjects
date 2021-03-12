@@ -23,7 +23,7 @@ build_final_analysis_rmd <- function(path) {
     body <- c("## R Markdown\n", "This is where your final analysis should go")
 
     # GET ETHICS CHECKLIST FROM DEON
-    ethics <- readLines("R/ETHICS.md")
+    ethics <- load("ethics")
 
     # COMBINE THE HEADER, DATA CHUNK, AND BODY INTO A SINGLE STRING
     contents <- paste(
