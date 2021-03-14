@@ -20,7 +20,7 @@ build_final_analysis_rmd <- function(path) {
                "```\n")
 
     # CREATE THE BODY FOR FINAL ANALYSIS FILE
-    body <- c("## R Markdown\n", "This is where your final analysis should go")
+    body <- c("## R Markdown\n", "This is where your final analysis should go\n")
 
     # COMBINE THE HEADER, DATA CHUNK, AND BODY INTO A SINGLE STRING
     contents <- paste(
@@ -36,7 +36,7 @@ build_final_analysis_rmd <- function(path) {
 
 #' Create the Ethics Checklist
 #'
-#' TThis ethics checklist comes directly from https://deon.drivendata.org
+#' This ethics checklist comes directly from https://deon.drivendata.org
 #'
 #' @param NA no parameters required
 #' @keywords
