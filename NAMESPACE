@@ -2,5 +2,5 @@
 
 export(build_final_analysis_rmd)
 export(create_directories)
-export(ethics_export)
+export(ethics_checklist)
 export(hello_world)
