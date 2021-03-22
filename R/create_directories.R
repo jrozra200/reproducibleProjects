@@ -3,9 +3,7 @@
 #' This function creates the necessary file structure for your analysis.
 #'
 #' @param path pass a path to the function
-#' @keywords
 #' @export
-#' @examples
 #' create_directories()
 create_directories <- function(path) {
 

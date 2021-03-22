@@ -1,4 +1,4 @@
-# Reproducable Projects
+# Reproducible Projects
 
 Very much a WIP right now, but working to create a reproducible organization for 
 my analyses. Based heavily on a few things that will be documented soon. 

@@ -12,6 +12,3 @@ create_directories(path)
 \description{
 This function creates the necessary file structure for your analysis.
 }
-\examples{
-create_directories()
-}

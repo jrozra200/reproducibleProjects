@@ -7,11 +7,11 @@
 build_final_analysis_rmd(path)
 }
 \arguments{
-\item{path}{pass a path to the function}
+\item{path}{The path for the new project being created.}
+}
+\value{
+Final analysis document for the new project
 }
 \description{
 This function will create a placeholder for your final analysis Rmd file
-}
-\examples{
-build_final_analysis_rmd()
 }

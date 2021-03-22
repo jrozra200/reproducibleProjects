@@ -2,31 +2,19 @@
 #'
 #' This function will create a placeholder for your final analysis Rmd file
 #'
-#' @param path pass a path to the function
-#' @keywords
+#' @param path The path for the new project being created.
+#' @return Final analysis document for the new project
 #' @export
-#' @examples
 #' build_final_analysis_rmd()
 build_final_analysis_rmd <- function(path) {
 
     # CREATE THE FINAL ANALYSIS FILE
 
-    # CREATE THE HEADER FOR FINAL ANALYSIS FILE
-    header <- c("---", "title: \"Untitled\"", "author: \"AUTHOR\"",
-                "date: \"DATE\"", "output: html_document", "---\n")
-
-    # CREATE THE DATA CHUNK FOR FINAL ANALYSIS FILE
-    chunk <- c("```{r setup, include = FALSE}", "# SETUP CHUNK FOR EXAMPLE",
-               "```\n")
-
-    # CREATE THE BODY FOR FINAL ANALYSIS FILE
-    body <- c("## R Markdown\n", "This is where your final analysis should go\n")
-
     # COMBINE THE HEADER, DATA CHUNK, AND BODY INTO A SINGLE STRING
     contents <- paste(
-        paste(header, collapse = "\n"),
-        paste(chunk, collapse = "\n"),
-        paste(body, collapse = "\n"),
+        paste(header(), collapse = "\n"),
+        paste(chunk(), collapse = "\n"),
+        paste(body(), collapse = "\n"),
         paste(ethics_checklist(), collapse = "\n"),
         sep = "\n")
 
@@ -34,14 +22,53 @@ build_final_analysis_rmd <- function(path) {
     writeLines(contents, con = file.path(path, "final_analysis.Rmd"))
 }
 
-#' Create the Ethics Checklist
+#' Create the header for the Final Rmd Doc
+#'
+#' Create the header for the final Rmd Doc
+#'
+#' @export
+#' header()
+header <- function() {
+    # CREATE THE HEADER FOR FINAL ANALYSIS FILE
+    header <- c("---", "title: \"Untitled\"", "author: \"AUTHOR\"",
+                "date: \"DATE\"", "output: html_document", "---\n")
+
+    return(header)
+}
+
+
+#' Create the code chunk for the Final Rmd Doc
+#'
+#' Create the sample code chunk for the final Rmd Doc
+#'
+#' @export
+#' chunk()
+chunk <- function() {
+    # CREATE THE DATA CHUNK FOR FINAL ANALYSIS FILE
+    chunk <- c("```{r setup, include = FALSE}", "# SETUP CHUNK FOR EXAMPLE",
+               "```\n")
+
+    return(chunk)
+}
+
+#' Create the body for the Final Rmd Doc
+#'
+#' Create the body for the final Rmd Doc
+#'
+#' @export
+#' body()
+body <- function() {
+    # CREATE THE BODY FOR FINAL ANALYSIS FILE
+    body <- c("## R Markdown\n", "This is where your final analysis should go\n")
+
+    return(body)
+}
+
+#' Create the Ethics Checklist for the Final Rmd Doc
 #'
 #' This ethics checklist comes directly from https://deon.drivendata.org
 #'
-#' @param NA no parameters required
-#' @keywords
 #' @export
-#' @examples
 #' ethics_checklist()
 ethics_checklist <- function() {
     ethics <- c("# Data Science Ethics Checklist",

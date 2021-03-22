@@ -2,16 +2,10 @@
 % Please edit documentation in R/build_final_analysis_rmd.R
 \name{ethics_checklist}
 \alias{ethics_checklist}
-\title{Create the Ethics Checklist}
+\title{Create the Ethics Checklist for the Final Rmd Doc}
 \usage{
 ethics_checklist()
 }
-\arguments{
-\item{NA}{no parameters required}
-}
 \description{
-TThis ethics checklist comes directly from https://deon.drivendata.org
-}
-\examples{
-ethics_checklist()
+This ethics checklist comes directly from https://deon.drivendata.org
 }
