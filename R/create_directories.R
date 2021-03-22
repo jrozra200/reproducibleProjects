@@ -4,7 +4,6 @@
 #'
 #' @param path pass a path to the function
 #' @export
-#' create_directories()
 create_directories <- function(path) {
 
     # CREATE THE PARENT DIRECTORY; ENSURE THAT PATH EXISTS

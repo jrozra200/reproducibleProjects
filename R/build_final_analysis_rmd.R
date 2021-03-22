@@ -5,7 +5,6 @@
 #' @param path The path for the new project being created.
 #' @return Final analysis document for the new project
 #' @export
-#' build_final_analysis_rmd()
 build_final_analysis_rmd <- function(path) {
 
     # CREATE THE FINAL ANALYSIS FILE
@@ -27,7 +26,6 @@ build_final_analysis_rmd <- function(path) {
 #' Create the header for the final Rmd Doc
 #'
 #' @export
-#' header()
 header <- function() {
     # CREATE THE HEADER FOR FINAL ANALYSIS FILE
     header <- c("---", "title: \"Untitled\"", "author: \"AUTHOR\"",
@@ -42,7 +40,6 @@ header <- function() {
 #' Create the sample code chunk for the final Rmd Doc
 #'
 #' @export
-#' chunk()
 chunk <- function() {
     # CREATE THE DATA CHUNK FOR FINAL ANALYSIS FILE
     chunk <- c("```{r setup, include = FALSE}", "# SETUP CHUNK FOR EXAMPLE",
@@ -56,7 +53,6 @@ chunk <- function() {
 #' Create the body for the final Rmd Doc
 #'
 #' @export
-#' body()
 body <- function() {
     # CREATE THE BODY FOR FINAL ANALYSIS FILE
     body <- c("# R Markdown\n",
@@ -91,7 +87,6 @@ body <- function() {
 #' This ethics checklist comes directly from https://deon.drivendata.org
 #'
 #' @export
-#' ethics_checklist()
 ethics_checklist <- function() {
     ethics <- c("# Data Science Ethics Checklist",
                 "",
