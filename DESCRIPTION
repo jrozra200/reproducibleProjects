@@ -1,7 +1,7 @@
 Package: reproducibleProjects
 Type: Package
 Title: Reproducible Analysis Projects
-Version: 0.1.0
+Version: 1.0.0
 Author: Jake Rozran
 Maintainer: Jake Rozran <jacob.rozran@gmail.com>
 Description: In order to create reproducible analysis, a package was created to 
