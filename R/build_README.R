@@ -7,7 +7,7 @@
 #' @export
 build_README <- function(path) {
 
-    ccontents <- paste(
+    contents <- paste(
         paste(body(path), collapse = "\n"),
         paste(ethics_checklist(), collapse = "\n"),
         sep = "\n")
