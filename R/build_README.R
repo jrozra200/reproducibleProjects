@@ -16,5 +16,5 @@ build_README <- function(path) {
                       collapse = "\n", sep = "\n")
 
     # STREAM STRING INTO THE FINAL ANALYSIS FILE
-    writeLines(contents, con = file.path(path, "final_analysis.Rmd"))
+    writeLines(contents, con = file.path(path, "README.md"))
 }
