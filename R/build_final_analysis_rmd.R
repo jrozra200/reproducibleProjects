@@ -13,7 +13,7 @@ build_final_analysis_rmd <- function(path) {
     contents <- paste(
         paste(header(), collapse = "\n"),
         paste(chunk(), collapse = "\n"),
-        paste(body(), collapse = "\n"),
+        paste(fa_body(), collapse = "\n"),
         sep = "\n")
 
     # STREAM STRING INTO THE FINAL ANALYSIS FILE
@@ -53,7 +53,7 @@ chunk <- function() {
 #'
 #' @return body contents for README file
 #' @export
-body <- function(path) {
+fa_body <- function() {
     # CREATE THE BODY FOR FINAL ANALYSIS FILE
     contents <- c("# Final RMarkdown File",
                   "",

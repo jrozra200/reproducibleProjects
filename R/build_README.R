@@ -8,7 +8,7 @@
 build_README <- function(path) {
 
     contents <- paste(
-        paste(body(path), collapse = "\n"),
+        paste(rm_body(path), collapse = "\n"),
         paste(ethics_checklist(), collapse = "\n"),
         sep = "\n")
 
@@ -23,7 +23,7 @@ build_README <- function(path) {
 #' @param path The path for the new project being created.
 #' @return body contents for README file
 #' @export
-body <- function(path) {
+rm_body <- function(path) {
     # CREATE THE BODY FOR FINAL ANALYSIS FILE
 
     title <- gsub("^(/\\w+)+/", "", path)
