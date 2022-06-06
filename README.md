@@ -23,8 +23,7 @@ these instructions will be updated if/when this package is available there. At
 this time, you can install directly from github.
 
 ``` {r}
-install.packages("devtools")
-devtools::install_github("jrozra200/reproduciblePackages")
+devtools::install_github("jrozra200/reproducibleProjects")
 ```
 
 After installation, you can create a new project using the reproducible project 
